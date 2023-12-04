@@ -2,13 +2,6 @@ mod parsing;
 
 static mut SYMBOLARRAY: [[bool; 140]; 140] = [[false; 140]; 140];
 
-fn printvector(vec: Vec<&str>) {
-    for v in vec {
-        print!("{}",v);
-    }
-    println!();
-}
-
 fn canfill(x: usize, y: usize) -> bool {
     return x >= 0 && x < 140 && y >= 0 && y < 140;
         
